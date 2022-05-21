@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="../icon.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+    <body class="body__productos">
+        <header class="header__index">
+                <a href="../index.html">
+                    <img class="logo"  src="../asset/imagenes/logo.png" alt="60" width="60">
+                </a>
+            <div class="nav__conteiner">
+                <nav class="header__nav">
+                    <ul class="ul__index">
+                        <li><a class="links" href="../index.html">Inicio</a></li>
+                        <li><a class="links" href="productos.html">Productos</a></li>
+                        <li><a class="links" href="fernetodologia.html">Fernetodología</a></li>
+                        <li><a class="links" href="fernesis.html">Fernesis</a></li>
+                        <li><a class="links" href="contactanos.html">Contactanos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main__products">
+                <section>
+                    <h1 class="titulo__productos">Productos Recomendados</h1>
+                </section> <br>
+            <div class="filtros">                       <!--Acá pondría un filtro pero todavía no sé hacerlo (╯°□°）╯︵ ┻━┻ --> 
+                    <legend class="fakeh3">Indumentaria</legend>
+                    <br>
+                    <label class="p__p" for="varios">Varios
+                        <input id="varios" name="indumentaria" type="checkbox" value="varios" checked required>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="p__p" for="gorras">Gorras
+                        <input id="gorras" name="indumentaria" type="checkbox" value="gorras" checked required>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="p__p" for="buzos">Buzos
+                        <input id="buzos" name="indumentaria" type="checkbox" value="buzos" checked required>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="p__p" for="remeras">Remeras
+                        <input id="remeras" name="indumentaria" type="checkbox" value="remeras" checked required>
+                    </label>            
+                    <br> </br>
+                    <legend class="fakeh3">Bebidas Alcoholicas</legend>
+                    <br>
+                        <label class="p__p" for="menta">Branca Menta
+                            <input id="menta" name="bebidas" type="checkbox" value="menta" checked required>
+                        </label>
+                        <br>
+                        <br>
+                        <label class="p__p" for="classic">Classic
+                            <input id="classic" name="bebidas" type="checkbox" value="classic" checked required>
+                        </label>
+                        <br>
+            </div>
+        </main>
+                 <!-- la idea es que cada producto tenga su propio recuadro con la información de costos-->
+        <div class="gallery__container">
+            <div class="gallery__item1">
+                <img class="gallery__img" src="../asset/imagenes/17.png"  alt="">
+                <h2 class="gallery__tittle">$2,270.- ars</h2>
+            </div>
+            <div class="gallery__item2">
+                <img class="gallery__img" src="../asset/imagenes/18.png"  alt="">
+                <h2 class="gallery__tittle">$1,980.- ars</h2>
+            </div>
+            <div class="gallery__item3">
+                <img class="gallery__img" src="../asset/imagenes/19.jpg"  alt="">
+                <h2 class="gallery__tittle">4,530.- ars</h2>
+            </div>
+            <div class="gallery__item4">
+                <img class="gallery__img" src="../asset/imagenes/20.jpg" alt="">
+                <h2 class="gallery__tittle">4,530.- ars</h2>
+            </div>
+        </div>
+        <footer class="footer__index">
+            <p class="p__footer">Copyright © 1999-2032 Jotale, todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
