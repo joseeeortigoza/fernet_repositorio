@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Ms+Madi&family=Yellowtail&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+    font-family: 'BIZ UDGothic';
+}
+.body__index{
+	height: 100vh;
+	display: grid;
+	/* gap: 5px; */
+	grid-template-columns: 1.7fr 0.3fr;
+  	grid-template-rows: 0.2fr 2.6fr 0.2fr;
+	grid-template-areas:
+	"header header"
+	"main aside"
+	"footer footer";
+}
+header{
+	grid-area: header;
+	background-color: rgba(93, 89, 89, 0.543);
+	background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(197, 189, 189) 90%);
+}
+.navbar .navbar-nav li a{
+    padding: 0.5rem 1rem;
+    transition: all 1s;
+    border-radius: 5px;
+}
+.navbar .navbar-nav li a:hover{
+    background: rgba(204, 204, 204, 0.516);
+}
+.navbar li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    text-shadow: rgb(75, 75, 75) -0.1em 0.1em 0.1em;
+    letter-spacing: 5px;
+}
+.header__nav .ul__index li a:hover {
+    background: rgba(204, 204, 204, 0.516);
+}
+.main__index{
+	grid-area: main;
+	background-image: url("../asset/imagenes/1.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.titulo__index{
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 1em;
+    text-shadow: rgb(94, 93, 93) -0.1em 0.1em 0.1em;
+    letter-spacing: 0.2em;
+    font-family: 'Yellowtail';
+}
+.p__index{
+    color: white;
+    font-size: 2rem;
+    line-height: 2.5em;
+    font-weight: bolder;
+    text-shadow: rgb(94, 93, 93) -0.1em 0.1em 0.1em;
+    margin-left: 15px;
+}
+.aside__index{
+	grid-area: aside;
+	background-image: url(../asset/imagenes/11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+	box-shadow: 0 8px 8px 0 rgba(75, 75, 75);
+	border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.h2__index{
+    color: white;
+    text-shadow: rgb(75, 75, 75) -0.1em 0.1em 0.1em;
+	text-align: center;
+    padding-bottom: 10px;
+}
+.p__aside__index{
+    color: white;
+    text-shadow: rgb(75, 75, 75) -0.1em 0.1em 0.1em;
+    font-weight: bolder;
+	text-align: center;
+    padding-bottom: 10px;
+}
+.link__product{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.footer__index{
+	grid-area: footer;
+	background-color: rgba(93, 89, 89, 0.543);
+	background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(197, 189, 189) 90%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.p__footer{
+    color: white;
+    text-shadow: rgb(120, 120, 120) -0.1em 0.1em 0.1em;
+	font-size: 1.2rem;
+}
+/* ACÁ COMIENZA CONTACTANOS */
+.body__contactanos{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.main__contactanos{
+    grid-area: main;
+    background-image: url(../asset/imagenes/9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
+}
+.box__form{
+    display: flex;
+    justify-content: center;
+}
+.form__contacto{
+    border: 1px solid #E1E1E1;
+    background-color: rgba(245, 245, 220, 0.509);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+input::placeholder{
+    font-size: 1.2em;
+}
+textarea{
+    font-size: 1em;
+}
+.letter__contacto{
+    font-size: 20px;
+    text-shadow: rgb(255, 255, 255) -0.1em 0.1em 0.1em;
+}

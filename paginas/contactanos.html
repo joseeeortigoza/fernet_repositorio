@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../icon.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylebts.css">
 </head>
     <body class="body__contactanos">
-        <header class="header__index">
+        <!-- <header class="header__index">
                     <a href="../index.html">
                         <img class="logo"  src="../asset/imagenes/logo.png" alt="60" width="60">
                     </a>
@@ -24,11 +25,40 @@
                         </ul>
                     </nav>
                 </div>
-        </header>                    
+        </header>                     -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../asset/imagenes/logo.png" alt="" width="60"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="../paginas/productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="../paginas/fernetodologia.html">Fernetodología</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="../paginas/fernesis.html">Fernesis</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="../paginas/contactanos.html">Contactanos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
                                 <!-- arranca el formulario para contactarse-->
         <main class="main__contactanos">
             <section class="box__form">
-                <form class="form__contacto" action="#" method="post" enctype="form"> 
+                <!-- <form class="form__contacto" action="#" method="post" enctype="form"> 
                     <h1>¡CONTACTANOS!</h1>
                         <div>
                             <p class="letter__contacto">Para nosotros es importante tu opinión. </p>
@@ -63,11 +93,59 @@
                                 <input type="reset" value="Limpiar">
                             </div>
                         </div>
+                </form> -->
+                <form class="form__contacto" action="#" method="post" enctype="form"> 
+                    <h1>¡CONTACTANOS!</h1>
+                    <p class="letter__contacto">Para nosotros es importante tu opinión. </p>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form6Example1" class="form-control" placeholder="Nombre"/>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form6Example2" class="form-control" placeholder="Apellido"/>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form6Example3" class="form-control" placeholder="Ingrese su email" />
+                    </div>
+                  
+                    <!-- phone number input -->
+                    <div class="form-outline mb-4">
+                      <input type="tel" id="form6Example4" class="form-control" placeholder="Indique su número de teléfono"/>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                      <textarea class="form-control" id="form6Example7" rows="4" placeholder="Ingrese un Comentario"></textarea>
+                    </div>
+                  
+                    <!-- terms and conditions -->
+                    <div class="form-check mb-4">
+                        <legend class="letter__contacto">Aceptar términos y condiciones?</legend>
+                            <label for="yes">SI
+                                <input id="yes" name="un_leng" type="radio" value="acepta" checked required>
+                            </label>
+                            <label for="no">NO
+                                <input id="no" name="un_leng" type="radio" value="no acepta"  required>
+                            </label>
+                    </div>  <br>
+                    <div>
+                        <input type="submit" value="Aceptar">
+                        <input type="reset" value="Borrar datos">
+                    </div>
                 </form>
             </section>
         </main>        
         <footer class="footer__index">
             <p class="p__footer">Copyright © 1999-2032 Jotale, todos los derechos reservados.</p>
-        </footer>        
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>          
     </body>
 </html>
